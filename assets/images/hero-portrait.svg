@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" style="overflow: visible;">
+  <defs>
+    <!-- G2 Gradients & Shadows based on Royal Violet Palette -->
+    <linearGradient id="gBlackGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#02060E" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <!-- Vibrant Royal Violet gradient for 2 and accents -->
+    <linearGradient id="twoPurpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8002AA" />
+      <stop offset="50%" stop-color="#9303C5" />
+      <stop offset="100%" stop-color="#B22BE6" />
+    </linearGradient>
+
+    <!-- Soft glow with Royal Violet -->
+    <filter id="purpleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#9303C5" flood-opacity="0.38" />
+    </filter>
+
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#02060E" flood-opacity="0.07" />
+    </filter>
+  </defs>
+
+  <!-- Crosshair axis lines (technical styling) -->
+  <line x1="300" y1="40" x2="300" y2="560" stroke="#ECEFF5" stroke-width="1.2" />
+  <line x1="40" y1="300" x2="560" y2="300" stroke="#ECEFF5" stroke-width="1.2" />
+
+  <!-- Outermost faint technical dashed circle -->
+  <circle cx="300" cy="300" r="255" fill="none" stroke="#E5E7EB" stroke-width="1.2" stroke-dasharray="3, 5" />
+
+  <!-- Orbiting tilted ellipse 1 -->
+  <ellipse cx="300" cy="300" rx="275" ry="195" fill="none" stroke="#9303C5" stroke-width="1.2" opacity="0.3" transform="rotate(-26 300 300)" />
+
+  <!-- Orbiting tilted ellipse 2 -->
+  <ellipse cx="300" cy="300" rx="265" ry="175" fill="none" stroke="#9303C5" stroke-width="1.4" opacity="0.4" transform="rotate(22 300 300)" />
+
+  <!-- Dot node on the orbit line -->
+  <circle cx="75" cy="340" r="4.5" fill="#9303C5" />
+  <circle cx="75" cy="340" r="9" fill="none" stroke="#9303C5" stroke-width="1" opacity="0.5" />
+
+  <!-- Orbiting tilted ellipse 3 (inner ring) -->
+  <ellipse cx="300" cy="300" rx="230" ry="200" fill="none" stroke="#B22BE6" stroke-width="1.2" opacity="0.25" transform="rotate(-55 300 300)" />
+
+  <!-- Violet halo ring -->
+  <circle cx="300" cy="300" r="198" fill="#FDF8FF" stroke="#F1D7FA" stroke-width="2.5" />
+
+  <!-- Secondary inner concentric ring -->
+  <circle cx="300" cy="300" r="182" fill="none" stroke="#E8BEF8" stroke-width="1.2" />
+
+  <!-- Central pristine white disc with subtle drop shadow -->
+  <circle cx="300" cy="300" r="162" fill="#FFFFFF" stroke="#F5F3FF" stroke-width="1.5" filter="url(#cardShadow)" />
+
+  <!-- Inner subtle border inside disc -->
+  <circle cx="300" cy="300" r="148" fill="none" stroke="#FAFAFC" stroke-width="1" />
+
+  <!-- Monogram G and 2 -->
+  <g transform="translate(300, 275)">
+    <!-- Letter G (deep intense black #02060E serif) -->
+    <text x="-32" y="38" font-family="'Playfair Display', Georgia, serif" font-size="152" font-weight="800" fill="url(#gBlackGrad)" text-anchor="middle" letter-spacing="-4">G</text>
+    
+    <!-- Number 2 (vibrant Royal Violet #9303C5 with glowing shadow) -->
+    <text x="56" y="38" font-family="'Inter', -apple-system, sans-serif" font-size="112" font-weight="800" fill="url(#twoPurpleGrad)" text-anchor="middle" filter="url(#purpleGlow)">2</text>
+  </g>
+
+  <!-- Divider line in the white circle -->
+  <line x1="210" y1="354" x2="390" y2="354" stroke="#EDE9FE" stroke-width="1.2" />
+
+  <!-- Group caption below G2 -->
+  <text x="300" y="374" font-family="'Inter', sans-serif" font-size="9" font-weight="800" fill="#02060E" text-anchor="middle" letter-spacing="2.5">GROUPE 2 • ULC-ICAM</text>
+  <text x="300" y="389" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600" fill="#9303C5" text-anchor="middle" letter-spacing="2">INGÉNIERIE &amp; INNOVATION</text>
+
+  <!-- Technical grid dots at bottom center -->
+  <g transform="translate(284, 495)">
+    <circle cx="0" cy="0" r="1.5" fill="#C084FC" />
+    <circle cx="8" cy="0" r="1.5" fill="#C084FC" />
+    <circle cx="16" cy="0" r="1.5" fill="#C084FC" />
+    <circle cx="24" cy="0" r="1.5" fill="#C084FC" />
+    <circle cx="32" cy="0" r="1.5" fill="#C084FC" />
+    <circle cx="0" cy="8" r="1.5" fill="#C084FC" />
+    <circle cx="8" cy="8" r="1.5" fill="#C084FC" />
+    <circle cx="16" cy="8" r="1.5" fill="#C084FC" />
+    <circle cx="24" cy="8" r="1.5" fill="#C084FC" />
+    <circle cx="32" cy="8" r="1.5" fill="#C084FC" />
+    <circle cx="0" cy="16" r="1.5" fill="#C084FC" />
+    <circle cx="8" cy="16" r="1.5" fill="#C084FC" />
+    <circle cx="16" cy="16" r="1.5" fill="#C084FC" />
+    <circle cx="24" cy="16" r="1.5" fill="#C084FC" />
+    <circle cx="32" cy="16" r="1.5" fill="#C084FC" />
+  </g>
+</svg>

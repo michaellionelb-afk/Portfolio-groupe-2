@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Encodage et affichage responsive pour mobile et écran -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titre de l'onglet et description pour le référencement -->
+  <title>Groupe 2 – ULC-ICAM | Portfolio Collectif d'Ingénierie</title>
+  <meta name="description" content="Portfolio collectif des 7 étudiants en ingénierie du Groupe 2 de l'ULC-ICAM.">
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Barre de navigation supérieure -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <!-- Logo et identité Groupe 2 ULC-ICAM -->
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/ulc-icam-logo.jpg" alt="Logo ULC-ICAM" class="nav-brand-logo-img">
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">ULC-ICAM</span>
+          <span class="nav-brand-subtitle">GROUPE 2 • INGÉNIERIE</span>
+        </div>
+      </a>
+
+      <!-- Bouton d'action direct vers les CV -->
+      <div class="nav-action">
+        <a href="pages/lionel.html" class="btn-dark-pill">
+          <span>Découvrir l'équipe</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section d'accueil (Hero) -->
+  <section id="accueil" class="hero">
+    <div class="container hero-grid">
+      <!-- Colonne gauche : Titre d'accroche et présentation générale -->
+      <div class="hero-content">
+        <span class="hero-greeting">
+          <svg class="hero-greeting-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20" />
+          </svg>
+          GROUPE 2 • ULC-ICAM • INGÉNIERIE &amp; INNOVATION
+        </span>
+        <h1 class="hero-title">
+          Des idées, des compétences,
+          <span class="italic-impression">des solutions.</span>
+        </h1>
+        <p class="hero-description">
+          Découvrez les parcours, les compétences et les projets des membres du Groupe 2. Une équipe d'étudiants en
+          ingénierie réunis par la curiosité, l'innovation, la collaboration et le désir de concevoir des solutions
+          techniques.
+        </p>
+        <!-- Boutons d'action rapides -->
+        <div class="hero-actions">
+          <a href="#projets" class="btn-dark-pill">
+            <span>Nos Projets</span>
+            <span class="arrow">→</span>
+          </a>
+          <a href="#a-propos" class="btn-outline-pill">À Propos</a>
+        </div>
+        <!-- Indicateur de défilement vers le bas -->
+        <div class="hero-scroll">
+          <span>SCROLL DOWN</span>
+          <span class="arrow">↓</span>
+        </div>
+      </div>
+
+      <!-- Colonne droite : Monogramme G2, cercles graphiques et badges -->
+      <div class="hero-visual">
+        <div class="hero-svg-container">
+          <img src="assets/images/hero-portrait.svg" alt="G2 ULC-ICAM Logo &amp; Engineering Graphic"
+            class="hero-main-svg">
+
+          <!-- Badge circulaire officiel ULC-ICAM -->
+          <div class="hero-stamp-badge">
+            <span class="stamp-curved-text">ULC-ICAM</span>
+            <img src="assets/images/ulc-icam-logo.jpg" alt="Logo ULC-ICAM" class="stamp-logo">
+            <span class="stamp-curved-text">ENGINEERING</span>
+          </div>
+
+          <!-- Tag informatif gauche -->
+          <div class="hero-tag-left">
+            <svg class="hero-tag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            <span>Innovation • Robotique • Énergie</span>
+          </div>
+
+          <!-- Tag informatif droit -->
+          <div class="hero-tag-right">
+            <svg class="hero-tag-icon hero-tag-icon-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20" />
+            </svg>
+            <span>Ingénierie 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bandeau des piliers et valeurs clés -->
+  <section class="services-strip">
+    <div class="container">
+      <div class="services-grid">
+
+        <div class="service-item">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+            </svg>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">INNOVATION</h3>
+            <p class="service-desc">Créativité technique et conception de solutions efficientes.</p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">TRAVAIL EN ÉQUIPE</h3>
+            <p class="service-desc">Synergie multidisciplinaire, entraide et cohésion collective.</p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">INGÉNIERIE</h3>
+            <p class="service-desc">Rigueur scientifique, calculs, CAO et prototypage appliqué.</p>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+            </svg>
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">APPRENTISSAGE</h3>
+            <p class="service-desc">Curiosité continue, acquisition de compétences et ouverture technologique.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets réalisés -->
+  <section id="projets" class="section">
+    <div class="container">
+      <div class="section-top-header">
+        <div>
+          <span class="section-subtitle-tag">RÉALISATIONS DU GROUPE 2</span>
+          <h2 class="section-serif-title">Selected Projects</h2>
+        </div>
+        <span class="section-view-all">4 PROJETS MAJEURS</span>
+      </div>
+
+      <div class="projects-strip-grid">
+
+        <!-- Projet 1 : Définition Projet Drone -->
+        <article class="project-card-definition">
+          <span class="project-def-number">01</span>
+          <h3 class="project-def-title">Projet Drone</h3>
+          <span class="project-def-category">Aéronautique &amp; Embarqué</span>
+          <p class="project-def-desc">
+            Développement de prototypes de drones académiques intégrant le suivi dynamique des coordonnées GPS d'un
+            smartphone pour un positionnement vertical précis, un mode autonome Follow Me, la conception mécanique sur
+            châssis S500 et la modélisation des calculs énergétiques d'autonomie et de rendement.
+          </p>
+          <div>
+            <div class="project-def-meta-heading">Membres associés :</div>
+            <div class="project-def-members">
+              Lionel CIRHUZA • David Cristal LANGA • Merveille MFALA • Israël KALESHI • Joel AMANI
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 2 : Définition Rallonge électrique -->
+        <article class="project-card-definition">
+          <span class="project-def-number">02</span>
+          <h3 class="project-def-title">Rallonge électrique</h3>
+          <span class="project-def-category">Distribution &amp; HydraOne</span>
+          <p class="project-def-desc">
+            Conception collaborative d'un produit de distribution électrique en mode PBL et développement de la rallonge
+            hybride HydraOne : multiprise avec prises USB, batterie de secours intégrée pour continuité de service,
+            commutation automatique en cas de coupure secteur et élaboration du devis technique complet.
+          </p>
+          <div>
+            <div class="project-def-meta-heading">Membres associés :</div>
+            <div class="project-def-members">
+              Lionel CIRHUZA • David Cristal LANGA • Israël KALESHI
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 3 : Définition Amplificateur de microphone -->
+        <article class="project-card-definition">
+          <span class="project-def-number">03</span>
+          <h3 class="project-def-title">Amplificateur de microphone</h3>
+          <span class="project-def-category">Électronique &amp; Audio</span>
+          <p class="project-def-desc">
+            Étude, maintenance et modélisation d'un étage amplificateur pour signal microphonique faible. Simulation du
+            circuit électronique sous environnement LTspice, vérification des points de fonctionnement et établissement
+            de la nomenclature complète des composants.
+          </p>
+          <div>
+            <div class="project-def-meta-heading">Membre associé :</div>
+            <div class="project-def-members">
+              Israël KALESHI
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 4 : Définition Projet Bateau -->
+        <article class="project-card-definition">
+          <span class="project-def-number">04</span>
+          <h3 class="project-def-title">Projet Bateau</h3>
+          <span class="project-def-category">Génie Naval &amp; Mécanique</span>
+          <p class="project-def-desc">
+            Étude mécanique approfondie, conception volumique, modélisation 3D assistée par ordinateur et réalisation
+            concrète d'un prototype naval technique dans le cadre du cycle d'ingénierie générale ICAM (2026-2027).
+          </p>
+          <div>
+            <div class="project-def-meta-heading">Membre associé :</div>
+            <div class="project-def-members">
+              Merveille MFALA
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section À Propos & Métriques clés -->
+  <section id="a-propos" class="about-section">
+    <div class="container">
+      <div class="about-editorial-grid">
+
+        <div class="about-editorial-left">
+          <span class="section-subtitle-tag">À PROPOS DU GROUPE 2</span>
+          <h2 class="about-editorial-quote">
+            Une équipe tournée vers l'ingénierie et l'innovation.
+          </h2>
+          <p class="about-editorial-text">
+            Le Groupe 2 rassemble des étudiants aux parcours, compétences et centres d'intérêt variés. À travers leur
+            formation et leurs projets, ils développent des compétences en ingénierie, informatique, mécanique,
+            électronique, conception technique et gestion de projet. Cette diversité favorise le partage des
+            connaissances, la collaboration et la recherche de solutions innovantes.
+          </p>
+          <div class="about-signature-script">Groupe 2 ULC-ICAM</div>
+          <div>
+            <a href="#membres" class="btn-outline-pill">
+              <span>DÉCOUVRIR LES PROFILS</span>
+              <span class="arrow">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-editorial-center">
+          <img src="assets/images/about-poster.svg" alt="Affiche Good Design is Good Business"
+            class="about-editorial-poster">
+        </div>
+
+        <!-- Chiffres clés et statistiques de l'équipe -->
+        <div class="about-stats-list">
+
+          <div class="about-stat-row">
+            <span class="about-stat-index">01.</span>
+            <div class="about-stat-number">7</div>
+            <div class="about-stat-label">ÉTUDIANTS-INGÉNIEURS</div>
+          </div>
+
+          <div class="about-stat-row">
+            <span class="about-stat-index">02.</span>
+            <div class="about-stat-number">4</div>
+            <div class="about-stat-label">CATÉGORIES DE PROJETS</div>
+          </div>
+
+          <div class="about-stat-row">
+            <span class="about-stat-index">03.</span>
+            <div class="about-stat-number">100%</div>
+            <div class="about-stat-label">SYNERGIE COLLECTIVE</div>
+          </div>
+
+          <div class="about-stat-row">
+            <span class="about-stat-index">04.</span>
+            <div class="about-stat-number">ICAM</div>
+            <div class="about-stat-label">EXCELLENCE POLYTECHNIQUE</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Membres et Profils individuels -->
+  <section id="membres" class="members-section">
+    <div class="container">
+      <div class="section-top-header">
+        <div>
+          <span class="section-subtitle-tag">ÉQUIPE GROUPE 2</span>
+          <h2 class="section-serif-title">Membres de l'équipe</h2>
+        </div>
+        <span class="section-view-all">7 PROFILS INDIVIDUELS</span>
+      </div>
+
+      <div class="members-grid-gallery">
+
+        <!-- Membre 1: Lionel -->
+        <article class="member-gallery-card">
+          <div class="member-avatar-box">
+            <img src="assets/images/lionel.png" alt="Photo de Lionel Cirhuza">
+          </div>
+          <span class="member-academic-tag">BACHELOR INTERNATIONAL 1</span>
+          <h3 class="member-name-title">CIRHUZA BARHOBAGAYANA LIONEL</h3>
+          <p class="member-bio-text">
+            Passionné par les sciences de l'ingénieur, la conception technique, la programmation et le travail en
+            équipe.
+          </p>
+          <div class="member-skills-row">
+            <span class="member-skill-tag">Calculs énergétiques</span>
+            <span class="member-skill-tag">SolidWorks</span>
+            <span class="member-skill-tag">Python/C</span>
+          </div>
+          <a href="pages/lionel.html" class="btn-black-pill member-view-btn">
+            <span>VOIR LE PROFIL</span>
+            <span class="arrow">→</span>
+          </a>
+        </article>
+
+        <!-- Membre 2: David -->
+        <article class="member-gallery-card">
+          <div class="member-avatar-box">
+            <img src="assets/images/david.png" alt="Photo de David Cristal Langa">
+          </div>
+          <span class="member-academic-tag">BACHELOR INTERNATIONAL 1</span>
+          <h3 class="member-name-title">DAVID CRISTAL LANGA BONKETHI</h3>
+          <p class="member-bio-text">
+            Intéressé par les sciences de l'ingénieur, le travail en équipe et la réalisation de projets techniques.
+          </p>
+          <div class="member-skills-row">
+            <span class="member-skill-tag">Autonomie/Rendement</span>
+            <span class="member-skill-tag">SolidWorks</span>
+            <span class="member-skill-tag">Python/HTML</span>
+          </div>
+          <a href="pages/david.html" class="btn-black-pill member-view-btn">
+            <span>VOIR LE PROFIL</span>
+            <span class="arrow">→</span>
+          </a>
+        </article>
+
+        <!-- Membre 3: Eredict -->
+        <article class="member-gallery-card">
+          <div class="member-avatar-box">
+            <img src="assets/images/eredict.jpg" alt="Photo d'Eredict Kalimira" style="object-position: center 20%;">
+          </div>
+          <span class="member-academic-tag">BACHELOR INTERNATIONAL 1</span>
+          <h3 class="member-name-title">KALIMIRA CITONABINTU EREDICT</h3>
+          <p class="member-bio-text">
+            Diplôme d'État en construction métallique. Intérêts en RDM, mécanique, soudure et nouvelles technologies.
+          </p>
+          <div class="member-skills-row">
+            <span class="member-skill-tag">Construction métallique</span>
+            <span class="member-skill-tag">Soudure</span>
+            <span class="member-skill-tag">SolidWorks</span>
+          </div>
+          <a href="pages/eredict.html" class="btn-black-pill member-view-btn">
+            <span>VOIR LE PROFIL</span>
+            <span class="arrow">→</span>
+          </a>
+        </article>
+
+        <!-- Membre 4: Merveille -->
+        <article class="member-gallery-card">
+          <div class="member-avatar-box">
+            <img src="assets/images/merveille.jpg" alt="Photo de Merveille Mfala">
+          </div>
+          <span class="member-academic-tag">BACHELOR INTERNATIONAL 1</span>
+          <h3 class="member-name-title">MERVEILLE MFALA</h3>
+          <p class="member-bio-text">
+            FabLab Maker. Axée sur la conception mécanique, les systèmes embarqués et le management de projet.
+          </p>
+          <div class="member-skills-row">
+            <span class="member-skill-tag">Fusion 360</span>
+            <span class="member-skill-tag">AutoCAD</span>
+            <span class="member-skill-tag">Gantt/PERT</span>
+          </div>
+          <a href="pages/merveille.html" class="btn-black-pill member-view-btn">
+            <span>VOIR LE PROFIL</span>
+            <span class="arrow">→</span>
+          </a>
+        </article>
+
+        <!-- Membre 5: Israël -->
+        <article class="member-gallery-card">
+          <div class="member-avatar-box">
+            <img src="assets/images/israel.png" alt="Photo d'Israël Kaleshi">
+          </div>
+          <span class="member-academic-tag">BACHELOR INTERNATIONAL 1</span>
+          <h3 class="member-name-title">ISRAËL KALESHI KYALONDAWA</h3>
+          <p class="member-bio-text">
+            Orienté génie industriel. Passionné par l'électronique, les systèmes connectés et la modélisation sous
+            LTspice.
+          </p>
+          <div class="member-skills-row">
+            <span class="member-skill-tag">LTspice</span>
+            <span class="member-skill-tag">MATLAB</span>
+            <span class="member-skill-tag">ESP32 &amp; Flutter</span>
+          </div>
+          <a href="pages/israel.html" class="btn-black-pill member-view-btn">
+            <span>VOIR LE PROFIL</span>
+            <span class="arrow">→</span>
+          </a>
+        </article>
+
+        <!-- Membre 6: Recodi -->
+        <article class="member-gallery-card">
+          <div class="member-avatar-box">
+            <img src="assets/images/recodi.jpg" alt="Photo de Recodi Mamanya" style="object-position: center 25%;">
+          </div>
+          <span class="member-academic-tag">BACHELOR INTERNATIONAL 1</span>
+          <h3 class="member-name-title">RECODI MAMANYA</h3>
+          <p class="member-bio-text">
+            Certifié Cisco Networking Basics. Passionné par les réseaux, la programmation web, l'électronique et le
+            Machine Learning.
+          </p>
+          <div class="member-skills-row">
+            <span class="member-skill-tag">Cisco Basics</span>
+            <span class="member-skill-tag">HTML5/CSS3</span>
+            <span class="member-skill-tag">Python &amp; ML</span>
+          </div>
+          <a href="pages/recodi.html" class="btn-black-pill member-view-btn">
+            <span>VOIR LE PROFIL</span>
+            <span class="arrow">→</span>
+          </a>
+        </article>
+
+        <!-- Membre 7: Joel -->
+        <article class="member-gallery-card">
+          <div class="member-avatar-box">
+            <img src="assets/images/joel.png" alt="Photo de Joel Amani">
+          </div>
+          <span class="member-academic-tag">BACHELOR INTERNATIONAL 1</span>
+          <h3 class="member-name-title">JOEL AMANI WENGA</h3>
+          <p class="member-bio-text">
+            Spécialisé dans l'automatisation, les systèmes de commande, les microcontrôleurs et le management de projet.
+          </p>
+          <div class="member-skills-row">
+            <span class="member-skill-tag">Systèmes embarqués</span>
+            <span class="member-skill-tag">Arduino C++</span>
+            <span class="member-skill-tag">Management</span>
+          </div>
+          <a href="pages/joel.html" class="btn-black-pill member-view-btn">
+            <span>VOIR LE PROFIL</span>
+            <span class="arrow">→</span>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences collectives -->
+  <section id="competences" class="skills-section">
+    <div class="container">
+      <div class="section-top-header">
+        <div>
+          <span class="section-subtitle-tag">SAVOIR-FAIRE GLOBAL</span>
+          <h2 class="section-serif-title">Compétences collectives</h2>
+        </div>
+        <span class="section-view-all">8 CATÉGORIES D'INGÉNIERIE</span>
+      </div>
+
+      <div class="skills-categories-grid">
+
+        <div class="skills-category-card">
+          <h3 class="skills-category-card-title">Sciences de l'ingénieur</h3>
+          <div class="skills-tags-wrap">
+            <span class="skill-tag-item">Calculs énergétiques</span>
+            <span class="skill-tag-item">Résistance des matériaux</span>
+            <span class="skill-tag-item">Résistance des structures</span>
+            <span class="skill-tag-item">Énergie photovoltaïque</span>
+          </div>
+        </div>
+
+        <div class="skills-category-card">
+          <h3 class="skills-category-card-title">Programmation</h3>
+          <div class="skills-tags-wrap">
+            <span class="skill-tag-item">Python</span>
+            <span class="skill-tag-item">C / C++</span>
+            <span class="skill-tag-item">Arduino C++</span>
+            <span class="skill-tag-item">HTML5 &amp; CSS3</span>
+            <span class="skill-tag-item">Flutter</span>
+          </div>
+        </div>
+
+        <div class="skills-category-card">
+          <h3 class="skills-category-card-title">Conception &amp; CAO</h3>
+          <div class="skills-tags-wrap">
+            <span class="skill-tag-item">SolidWorks</span>
+            <span class="skill-tag-item">Fusion 360</span>
+            <span class="skill-tag-item">AutoCAD</span>
+            <span class="skill-tag-item">Blender</span>
+            <span class="skill-tag-item">Impression 3D</span>
+          </div>
+        </div>
+
+        <div class="skills-category-card">
+          <h3 class="skills-category-card-title">Électronique &amp; Embarqué</h3>
+          <div class="skills-tags-wrap">
+            <span class="skill-tag-item">Arduino</span>
+            <span class="skill-tag-item">ESP32 / ESP8266</span>
+            <span class="skill-tag-item">Simulation Proteus</span>
+            <span class="skill-tag-item">Simulation LTspice</span>
+            <span class="skill-tag-item">RFID RC522</span>
+          </div>
+        </div>
+
+        <div class="skills-category-card">
+          <h3 class="skills-category-card-title">Mécanique &amp; Matériaux</h3>
+          <div class="skills-tags-wrap">
+            <span class="skill-tag-item">Génie mécanique</span>
+            <span class="skill-tag-item">Construction métallique</span>
+            <span class="skill-tag-item">Soudure industrielle</span>
+            <span class="skill-tag-item">Robotique</span>
+          </div>
+        </div>
+
+        <div class="skills-category-card">
+          <h3 class="skills-category-card-title">Gestion de projet</h3>
+          <div class="skills-tags-wrap">
+            <span class="skill-tag-item">Management de projet</span>
+            <span class="skill-tag-item">Gantt &amp; PERT</span>
+            <span class="skill-tag-item">GanttProject</span>
+            <span class="skill-tag-item">Devis &amp; Budget</span>
+          </div>
+        </div>
+
+        <div class="skills-category-card">
+          <h3 class="skills-category-card-title">Collaboration &amp; Humain</h3>
+          <div class="skills-tags-wrap">
+            <span class="skill-tag-item">Travail en équipe</span>
+            <span class="skill-tag-item">Résolution de problèmes</span>
+            <span class="skill-tag-item">Leadership</span>
+            <span class="skill-tag-item">Communication</span>
+          </div>
+        </div>
+
+        <div class="skills-category-card">
+          <h3 class="skills-category-card-title">Informatique &amp; Outils</h3>
+          <div class="skills-tags-wrap">
+            <span class="skill-tag-item">Réseaux Cisco Basics</span>
+            <span class="skill-tag-item">Machine Learning</span>
+            <span class="skill-tag-item">MATLAB</span>
+            <span class="skill-tag-item">Pack Office &amp; Teams</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bannière d'appel à l'action (Call To Action) -->
+  <section class="cta-strip">
+    <div class="container cta-flex">
+      <div class="cta-left">
+        <span class="cta-pretitle">GROUPE 2 – ULC-ICAM KINSHASA</span>
+        <h2 class="cta-main-title">Let's Create Something Amazing Together.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page (Footer) -->
+  <footer class="footer-editorial">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <!-- Informations et résumé de l'école -->
+        <div class="footer-brand-box">
+          <a href="index.html" class="nav-brand" style="margin-bottom: 0.75rem;">
+            <img src="assets/images/ulc-icam-logo.jpg" alt="Logo ULC-ICAM" class="nav-brand-logo-img">
+            <div class="nav-brand-text">
+              <span class="nav-brand-title">ULC-ICAM</span>
+              <span class="nav-brand-subtitle">GROUPE 2</span>
+            </div>
+          </a>
+          <p style="font-size: 0.8rem; color: var(--color-muted); line-height: 1.6; max-width: 260px;">
+            Portfolio collectif réalisé dans le cadre du cursus d'ingénierie à l'Université Loyola du Congo.
+          </p>
+        </div>
+
+        <!-- Liens rapides de navigation -->
+        <div>
+          <h4 class="footer-heading-col">QUICK LINKS</h4>
+          <ul class="footer-links-list">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#membres">Membres</a></li>
+          </ul>
+        </div>
+
+        <!-- Liste des 4 projets clés -->
+        <div>
+          <h4 class="footer-heading-col">PROJETS CLÉS</h4>
+          <ul class="footer-links-list">
+            <li><a href="#projets">Projet Drone</a></li>
+            <li><a href="#projets">Rallonge électrique</a></li>
+            <li><a href="#projets">Amplificateur micro</a></li>
+            <li><a href="#projets">Projet Bateau</a></li>
+          </ul>
+        </div>
+
+        <!-- Coordonnées et adresse -->
+        <div>
+          <h4 class="footer-heading-col">CONTACT</h4>
+          <ul class="footer-links-list">
+            <li>Faculté d'Ingénierie</li>
+            <li>ULC-ICAM Kinshasa</li>
+            <li>Rép. Dém. du Congo</li>
+          </ul>
+        </div>
+
+        <!-- Réseaux et liens institutionnels -->
+        <div>
+          <h4 class="footer-heading-col">SUIVRE</h4>
+          <div class="footer-socials">
+            <span class="footer-social-icon">IN</span>
+            <span class="footer-social-icon">GH</span>
+            <span class="footer-social-icon">IC</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright et mention légale -->
+      <div class="footer-bottom-bar">
+        &copy; 2026-2027 Groupe 2 – Faculté d'Ingénierie ULC-ICAM Kinshasa. Conçu en HTML5 &amp; CSS3 pur.
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

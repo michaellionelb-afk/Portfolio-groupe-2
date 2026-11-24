@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" width="100%" height="100%">
+  <!-- Frame border -->
+  <rect x="0" y="0" width="320" height="420" fill="#FFFFFF" stroke="#0F172A" stroke-width="8" />
+  <rect x="14" y="14" width="292" height="392" fill="#F8FAFC" />
+  
+  <!-- Engineering manifesto quote -->
+  <text x="160" y="140" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="700" fill="#0F172A" text-anchor="middle" letter-spacing="1">GOOD</text>
+  <text x="160" y="195" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="700" fill="#0F172A" text-anchor="middle" letter-spacing="1">DESIGN</text>
+  <text x="160" y="248" font-family="'Inter', sans-serif" font-size="16" font-style="italic" font-weight="400" fill="#64748B" text-anchor="middle" letter-spacing="4">IS GOOD</text>
+  <text x="160" y="305" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="700" fill="#0F172A" text-anchor="middle" letter-spacing="1">BUSINESS.</text>
+
+  <!-- Accent line -->
+  <line x1="80" y1="335" x2="240" y2="335" stroke="#6C5CE7" stroke-width="2" />
+  <text x="160" y="365" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#94A3B8" text-anchor="middle" letter-spacing="3">ULC-ICAM • GROUPE 2</text>
+</svg>
